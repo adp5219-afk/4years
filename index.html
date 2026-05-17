@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The April Surprise</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app-shell">
+      <section class="photo-frame" aria-label="Memory photos around the game">
+        <figure class="memory memory-a">
+          <img src="assets/photo-1.jpg" data-photo="photo-1" alt="A favorite photo together" />
+        </figure>
+        <figure class="memory memory-b">
+          <img src="assets/photo-2.jpg" data-photo="photo-2" alt="Another favorite photo together" />
+        </figure>
+        <figure class="memory memory-c">
+          <img src="assets/photo-3.jpg" data-photo="photo-3" alt="A sweet memory together" />
+        </figure>
+        <figure class="memory memory-d">
+          <img src="assets/photo-4.jpg" data-photo="photo-4" alt="A happy moment together" />
+        </figure>
+      </section>
+
+      <section class="quiz-card" id="quiz-card" aria-live="polite">
+        <p class="eyebrow" id="progress-label">Question 1 of 5</p>
+        <h1 id="question">Ready?</h1>
+        <div class="answers" id="answers"></div>
+        <div class="correct-panel" id="correct-panel" hidden>
+          <div class="checkmark" aria-label="Correct answer">✓</div>
+          <button class="next-button" type="button" id="next-button">Next</button>
+        </div>
+      </section>
+
+      <section class="interlude" id="interlude" hidden aria-live="polite">
+        <h1>because you know me so well<span class="dots">...</span></h1>
+      </section>
+
+      <section class="reveal" id="reveal" hidden>
+        <div class="confetti" aria-hidden="true"></div>
+        <p class="eyebrow">Surprise</p>
+        <h1>We are going to see Niall Horan in April</h1>
+        <div class="ticket-wrap">
+          <img src="assets/tickets.jpg" data-photo="tickets" alt="Concert tickets" />
+        </div>
+        <p class="reveal-copy">
+          Happy Anniversary
+        </p>
+        <button class="play-again" type="button" id="play-again">Replay the reveal</button>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
